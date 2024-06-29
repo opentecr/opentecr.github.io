@@ -101,7 +101,13 @@
         background-color: #eee;
         border-top: 1px solid #e0e0e0;
         padding-top: 15px;
+      }
 
+      /**
+      * Element-specific CSS
+      */
+      #imprintlink:hover {
+          cursor: pointer;
       }
     </style>
   </head>
@@ -162,7 +168,7 @@
     </div>
     <footer>
       <div class="mui-container mui--text-center mui--text-bottom">
-        <div><a onclick="toggle_visibility('imprint')">Imprint / Impressum</a></div>
+        <div><a id="imprintlink" onclick="toggle_visibility('imprint')">Imprint / Impressum</a></div>
         <div id="imprint" style="display: none;">
             <br>
             Robert Giessmann <br>
