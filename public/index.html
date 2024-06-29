@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>openTECR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.10.3//js/mui.min.js"></script>
+    <script>
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+      }
+    </script>
+    <style>
+      /**
+       * Body CSS
+       */
+      html,
+      body {
+        height: 100%;
+      }
+
+      html,
+      body,
+      input,
+      textarea,
+      button {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+      }
+
+
+
+      /**
+       * Header CSS
+       */
+      header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      header.mui-appbar {
+        background-color: rgb(82, 128, 53)
+      }
+
+      header ul.mui-list--inline {
+        margin-bottom: 0;
+      }
+
+      header a {
+        color: white;
+      }
+
+      header table {
+        width: 100%;
+      }
+
+      /**
+       * Content CSS
+       */
+      #content-wrapper {
+        box-sizing: border-box;
+        min-height: 100%;
+        margin-left:  5%;
+        margin-right: 5%;
+      
+        margin-bottom: -80px;
+        padding-bottom: 80px;
+      }
+
+      @media (min-width: 768px) {
+        #content-wrapper {
+        margin-left:  15%;
+        margin-right: 15%;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        #content-wrapper {
+        margin-left:  25%;
+        margin-right: 25%;
+        }
+      }
+
+      /**
+       * Footer CSS
+       */
+      footer {
+        box-sizing: border-box;
+        min-height: 80px;
+        background-color: #eee;
+        border-top: 1px solid #e0e0e0;
+        padding-top: 15px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table>
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title"><a href="https://opentecr.github.io/">openTECR</a></td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-left">
+      <div class="mui--appbar-height"></div>
+      <br>
+      <br>
+      <div class="mui--text-display3">openTECR</div>
+      <br>
+      <div class="mui--text">openTECR (Open database on Thermodynamics of Enzyme-Catalyzed Reactions) is a database and a community.</div>
+      <br>
+      <div class="mui--text">
+        We aim to create a reliable, free, machine-actionable data collection of apparent equilibrium constants of enzyme-catalyzed reactions, with a clear change process to integrate new data and correct errors.
+      </div>
+      <br>
+      <div class="mui--text">
+        This database is expected to serve computational and experimental scientists in the fields of metabolic engineering, genome-scale metabolic modelling, biocatalysis and related fields by providing curated information. It is used by <a href="https://equilibrator.weizmann.ac.il/">eQuilibrator</a> and other applications as the shared data basis for their individual calculations.
+      </div>
+      <br>
+      <br>
+      <div class="mui--text-display1">TECRDB v1.0.0</div>
+      <br>
+      <div class="mui--text">
+        In a first step towards a truly open database, we recurated an existing database with more than 5500 data points, representing the biggest catalog of measured thermodynamic parameters for biologically relevant reactions. This existing database, the Thermodynamics of Enzyme-Catalzyed Reactions Database (TECRDB), was originally created by the National Institute of Standards and Technology and published as a set of pdf files containing tables and metadata.
+      </div>
+      <br>
+      <div class="mui--text">
+        <a href="https://tecrdb.robert-giessmann.de">You can read more about our effort on TECRDB here.</a>
+      </div>
+      <br>
+      <br>
+
+      <div class="mui--text-display1">About the community</div>
+      <br>
+      <div class="mui--text">
+        Our community organizes openly using a Google Groups. To become part of the mailing list, visit <a href="https://groups.google.com/g/opentecr">https://groups.google.com/g/opentecr</a>.
+      </div>
+      <br>
+      <div class="mui--text">
+        You can read more about next steps, our roadmap, and see our code at GitHub: <a href="https://github.com/opentecr">https://github.com/opentecr</a>.
+      </div>
+      <br>
+
+
+      <button class="mui-btn mui-btn--raised"><a class="mui--text-black" href="https://groups.google.com/g/opentecr">Get in touch with the community</a></button>
+      <br>
+      <br>
+    </div>
+    <footer>
+      <div class="mui-container mui--text-center mui--text-bottom">
+        <div><a onclick="toggle_visibility('imprint')">Imprint / Impressum</a></div>
+        <div id="imprint" style="display: none;">
+            <br>
+            Robert Giessmann <br>
+            Warthestr. 30<br>
+            12051 Berlin<br>
+            Germany<br>
+            email: <a href="mailto:tecrdb@robert-giessmann.de">tecrdb@robert-giessmann.de</a><br>
+            telephone: +49 151 56 9789 21<br>
+            <br>
+            
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
